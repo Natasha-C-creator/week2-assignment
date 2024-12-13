@@ -4,3 +4,11 @@ body {
     background-color: lightpink
 }
 
+#largeImageContainer {
+    padding: 0px;
+    max-width: 600px;
+    margin-top: 0px;
+   }
+  #largeImageContainer img {
+    width: 100%;
+  }

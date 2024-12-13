@@ -33,6 +33,7 @@ const imagesArray = [
   },
 ];
 
+// This code successfully shows images on the page:
 const thumbnailContainer = document.getElementById("thumbnail-container");
 
 function createThumbnails(imagesArray) {
@@ -49,3 +50,24 @@ function createThumbnails(imagesArray) {
 }
 
 createThumbnails(imagesArray);
+
+// //This code was my attempt to start the click function but seemed to remove the images:
+// function createThumbnails(imagesArray) {
+//   imagesArray.forEach((image) => {
+//     const newImg = document.createElement("img");
+//     newImg.src = image.src;
+//     newImg.alt = image.alt;
+//     newImg.width = image.width;
+//     newImg.height = image.height;
+//     newImg.addEventListener("click", function () {
+//       displayedImage.src = image.src;
+//       displayedImage.alt = image.alt;
+//       //   const thumbnailContainer = document.getElementById("thumbnail-container");
+//       //   const largeImageContainer = document.getElementById("large-image-container");
+//       //   const displayedImage = document.getElementById("displayed-image");
+//     });
+//     thumbnailContainer.appendChild(newImg);
+//   });
+// }
+
+// createThumbnails(imagesArray);
